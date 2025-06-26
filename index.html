@@ -9,7 +9,7 @@
     </head>
     <body>
         <header class="navbar">
-            <div class="logo">Alex Brady</div>
+            <div class="navbar__logo">Alex Brady</div>
             <nav>
                 <ul>
                     <li><a href="#about">About Me</a></li>
@@ -20,10 +20,15 @@
         </header>
 
         <section class="about">
-            <h1 id="about heading">
+            <h1 id="about-heading">
                 From Biology to Browsers, Meet Alex Brady
             </h1>
-            <p class="intro">
+            <img
+                src="images/instagramimg.jpg"
+                alt="profile picture"
+                class="profile-picture"
+            />
+            <p class="about-intro">
                 After four years working in the tech space, I decided it was
                 time to flip the script—swapping recruitment calls for
                 console.log() and career coaching for clean code. I have a
@@ -32,59 +37,113 @@
                 CSS, and JavaScript via _Nology. Now, instead of just talking to
                 great developers I’m becoming one
             </p>
-            <p class="intro">
+            <p class="about-intro">
                 While I’m new to web development, I’m not new to solving
                 problems, communicating clearly, and getting things done. Here’s
                 what I’m bringing with me:
             </p>
-            <ul>
-                <li>
+            <ul class="about-list">
+                <li class="list-item">
                     People skills, perfected. Four years in technical
                     recruitment sharpened my ability to communicate with all
                     kinds of people—developers, designers, stakeholders—and
                     translate technical needs into real-world solutions
                 </li>
-                <li>
+                <li class="list-item">
                     Analytical mindset. My background in Biology means I’ve
                     spent a lot of time analyzing complex systems. Debugging
                     code? Just a different kind of organism to dissect.
                 </li>
-                <li>
+                <li class="list-item">
                     Project management instincts. From managing hiring pipelines
                     to juggling client expectations, I’ve learned how to stay
                     organized, prioritize tasks, and hit deadlines (without
                     losing my mind).
                 </li>
-                <li>
+                <li class="list-item">
                     Curiosity + adaptability. Whether it’s genomics or
                     JavaScript, I love digging into new topics and learning
                     fast. I don’t mind being the beginner—because I won’t be one
                     for long.
                 </li>
             </ul>
-            <p class="intro">
+            <p class="about-intro">
                 I'm not just learning how to build websites—I'm building a new
                 career on a strong foundation of skills I already know work.
             </p>
         </section>
 
-        <section id="technical skills">
-            <h3>Technical Skills</h3>
-            <ul>
-                <li>JavaScript</li>
-                <li>HTML & CSS</li>
-                <li>Java</li>
-                <li>SQL</li>
-            </ul>
+        <section class="tech-skills">
+            <h2 class="tech-skills__heading">Technical Skills</h2>
+            <p class="tech-skills__description">
+                I may be new to web development, but I’ve already picked up a
+                toolkit that’s more than just buzzwords. From wrangling Git
+                commits to crafting clean HTML, I’m building real skills—one
+                line of code (and the occasional bug fix) at a time.
+            </p>
+            <div class="tech-skills__icons">
+                <div class="tech-icon">
+                    <img
+                        src="images/html&css.jpg"
+                        alt="HTML&CSS"
+                        class="tech-icon__img"
+                    />
+                    <span class="tech-icon__label">HTML & CSS</span>
+                </div>
+                <div class="tech-icon">
+                    <img
+                        src="images/java.png"
+                        alt="Java Icon"
+                        class="tech-icon__img"
+                    />
+                    <span class="tech-icon__label">Java</span>
+                </div>
+                <div class="tech-icon">
+                    <img
+                        src="images/JavaScript-logo.png"
+                        alt="JavaScript Logo"
+                        class="tech-icon__img"
+                    />
+                    <span class="tech-icon__label">JavaScript</span>
+                </div>
+                <div class="tech-icon">
+                    <img
+                        src="images/Sql_data_base_with_logo.svg.png"
+                        alt="SQL Logo"
+                        class="tech-icon__img"
+                    />
+                    <span class="tech-icon__label">SQL logo</span>
+                </div>
+            </div>
         </section>
 
-        <footer>
-            <a href="https://www.linkedin.com/in/alex-brady-ba21aa152/">
-                <img src="images/linkedIn.png" alt="Linkedin Logo" />
-            </a>
-            <a href="https://www.instagram.com/alexbrady_98/">
-                <img src="images/instagram.webp" alt="Instagram Logo" />
-            </a>
+        <footer class="footer-links">
+            <div class="footer-link__email">
+                <a href="mailto:alex.brady@nology.io">alex.brady@nology.io</a>
+            </div>
+            <div class="footer-link__logos">
+                <a href="https://www.linkedin.com/in/alex-brady-ba21aa152/">
+                    <img
+                        src="images/linkedIn.png"
+                        alt="Linkedin Logo"
+                        class="footer-logo__img"
+                    />
+                </a>
+                <a href="https://www.instagram.com/alexbrady_98/">
+                    <img
+                        src="images/instagram.webp"
+                        alt="Instagram Logo"
+                        class="footer-logo__img"
+                    />
+                </a>
+                <a href="https://x.com/Weaseelio">
+                    <img
+                        src="images/x logo.png"
+                        alt="X Logo"
+                        class="footer-logo__img"
+                    />
+                </a>
+            </div>
         </footer>
     </body>
 </html>

@@ -1,0 +1,39 @@
+.tech-skills {
+    text-align: center;
+    padding: 2rem;
+
+    &__heading {
+        font-size: 2rem;
+        font-weight: bold;
+        margin-bottom: 0.5rem;
+    }
+
+    &__description {
+        font-size: 1rem;
+        color: #555;
+        margin-bottom: 2rem;
+    }
+
+    &__icons {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 2rem;
+    }
+}
+
+.tech-icon {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    &__img {
+        width: 40px;
+        height: auto;
+    }
+
+    &__label {
+        margin-top: 0.5rem;
+        font-size: 0.875rem;
+    }
+}
