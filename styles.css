@@ -1,34 +1,84 @@
+.about__content {
+  display: flex;
+  align-items: flex-start;
+  gap: 2rem;
+  padding: 2rem;
+}
+.about__content .about__profile-picture {
+  width: 300px;
+  height: auto;
+  border-radius: 12px;
+  object-fit: cover;
+}
+.about__content .about__text {
+  flex: 1;
+  max-width: 700px;
+}
+.about__content .about__text .about__intro {
+  margin-bottom: 1rem;
+  line-height: 1.6;
+}
+.about__content .about__text .about__list {
+  padding-left: 1rem;
+}
+.about__content .about__text .about__list .about__list-item {
+  margin-bottom: 0.5rem;
+  list-style: disc;
+}
+
 .tech-skills {
-    text-align: center;
-    padding: 2rem;
+  text-align: center;
+  padding: 2rem;
 }
 .tech-skills__heading {
-    font-size: 2rem;
-    font-weight: bold;
-    margin-bottom: 0.5rem;
+  text-align: center;
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
 }
 .tech-skills__description {
-    font-size: 1rem;
-    color: #555;
-    margin-bottom: 2rem;
+  font-size: 1rem;
+  color: #515050;
+  margin-bottom: 2rem;
 }
 .tech-skills__icons {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    gap: 2rem;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 2rem;
 }
 
 .tech-icon {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 .tech-icon__img {
-    width: 40px;
-    height: auto;
+  width: 40px;
+  height: auto;
 }
 .tech-icon__label {
-    margin-top: 0.5rem;
-    font-size: 0.875rem;
+  margin-top: 0.5rem;
+  font-size: 0.875rem;
+}
+
+.footer-links {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 100%;
+}
+.footer-links__email {
+  font-size: 1rem;
+  color: black;
+}
+.footer-links__logos {
+  display: flex;
+  gap: 1rem;
+}
+.footer-links__logo-img {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 2rem;
 }
