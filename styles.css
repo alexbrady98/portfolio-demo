@@ -16,6 +16,8 @@
 .navbar__list {
   display: flex;
   list-style: none;
+  justify-content: space-evenly;
+  width: 100%;
 }
 .navbar__item {
   border: none;
@@ -31,6 +33,7 @@
   text-align: center;
   position: relative;
   font-size: 2rem;
+  text-decoration: underline;
   margin-bottom: 2rem;
 }
 .about .about__content {
@@ -68,6 +71,7 @@
   padding: 2rem;
 }
 .tech-skills__heading {
+  text-decoration: underline;
   text-align: center;
   font-size: 2rem;
   font-weight: bold;
@@ -114,11 +118,12 @@
 .footer-links__logos {
   display: flex;
   gap: 1rem;
+  justify-content: center;
 }
 .footer-links__logo-img {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
+  border-radius: 25px;
   gap: 2rem;
+  justify-content: space-evenly;
+  height: auto;
   max-width: 200px;
 }
