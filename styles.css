@@ -1,32 +1,69 @@
-.about__content {
+.navbar {
+  border: 2px solid black;
+  border-radius: 25px;
+  justify-content: space-between;
+}
+.navbar__logo {
+  text-align: left;
+  padding-left: 20px;
+  position: relative;
+}
+.navbar__nav {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+.navbar__list {
+  display: flex;
+  list-style: none;
+}
+.navbar__item {
+  border: none;
+  list-style: none;
+  justify-content: space-between;
+}
+
+.about {
+  border: 2px solid;
+  border-radius: 25px;
+}
+.about .about__heading {
+  text-align: center;
+  position: relative;
+  font-size: 2rem;
+  margin-bottom: 2rem;
+}
+.about .about__content {
   display: flex;
   align-items: flex-start;
   gap: 2rem;
   padding: 2rem;
 }
-.about__content .about__profile-picture {
+.about .about__content .about__profile-picture {
   width: 300px;
   height: auto;
   border-radius: 12px;
   object-fit: cover;
 }
-.about__content .about__text {
+.about .about__content .about__text {
   flex: 1;
   max-width: 700px;
 }
-.about__content .about__text .about__intro {
+.about .about__content .about__text .about__intro {
   margin-bottom: 1rem;
   line-height: 1.6;
 }
-.about__content .about__text .about__list {
+.about .about__content .about__text .about__list {
   padding-left: 1rem;
 }
-.about__content .about__text .about__list .about__list-item {
+.about .about__content .about__text .about__list .about__list-item {
   margin-bottom: 0.5rem;
   list-style: disc;
 }
 
 .tech-skills {
+  border: 2px solid;
+  border-radius: 25px;
   text-align: center;
   padding: 2rem;
 }
@@ -63,6 +100,8 @@
 }
 
 .footer-links {
+  border: solid;
+  border-radius: 25px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -81,4 +120,5 @@
   justify-content: center;
   flex-wrap: wrap;
   gap: 2rem;
+  max-width: 200px;
 }

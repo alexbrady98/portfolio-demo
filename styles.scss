@@ -1,62 +1,100 @@
-.about__content {
-    display: flex;
-    align-items: flex-start;
-    gap: 2rem;
-    padding: 2rem;
+.navbar {
+    border: 2px solid black;
+    border-radius: 25px;
+    justify-content: space-between;
 
-    .about__profile-picture {
-        width: 300px;
-        height: auto;
-        border-radius: 12px;
-        object-fit: cover;
+    &__logo {
+        text-align: left;
+        padding-left: 20px;
+        position: relative;
     }
 
-    .about__text {
+    &__nav {
         flex: 1;
-        max-width: 700px;
+        display: flex;
+        justify-content: center;
+    }
 
-        .about__intro {
-            margin-bottom: 1rem;
-            line-height: 1.6;
+    &__list {
+        display: flex;
+        list-style: none;
+    }
+    &__item {
+        border: none;
+        list-style: none;
+        justify-content: space-between;
+    }
+}
+.about {
+    border: 2px solid;
+    border-radius: 25px;
+    .about__heading {
+        text-align: center;
+        position: relative;
+        font-size: 2rem;
+        margin-bottom: 2rem;
+    }
+
+    .about__content {
+        display: flex;
+        align-items: flex-start;
+        gap: 2rem;
+        padding: 2rem;
+
+        .about__profile-picture {
+            width: 300px;
+            height: auto;
+            border-radius: 12px;
+            object-fit: cover;
         }
 
-        .about__list {
-            padding-left: 1rem;
+        .about__text {
+            flex: 1;
+            max-width: 700px;
 
-            .about__list-item {
-                margin-bottom: 0.5rem;
-                list-style: disc;
+            .about__intro {
+                margin-bottom: 1rem;
+                line-height: 1.6;
+            }
+
+            .about__list {
+                padding-left: 1rem;
+
+                .about__list-item {
+                    margin-bottom: 0.5rem;
+                    list-style: disc;
+                }
             }
         }
     }
 }
 
+.tech-skills {
+    border: 2px solid;
+    border-radius: 25px;
+    text-align: center;
+    padding: 2rem;
 
-    .tech-skills {
+    &__heading {
         text-align: center;
-        padding: 2rem;
-
-        &__heading {
-            text-align: center;
-            font-size: 2rem;
-            font-weight: bold;
-            margin-bottom: 0.5rem;
-        }
-
-        &__description {
-            font-size: 1rem;
-            color: #515050;
-            margin-bottom: 2rem;
-        }
-
-        &__icons {
-            display: flex;
-            justify-content: center;
-            flex-wrap: wrap;
-            gap: 2rem;
-        }
+        font-size: 2rem;
+        font-weight: bold;
+        margin-bottom: 0.5rem;
     }
 
+    &__description {
+        font-size: 1rem;
+        color: #515050;
+        margin-bottom: 2rem;
+    }
+
+    &__icons {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 2rem;
+    }
+}
 
 .tech-icon {
     display: flex;
@@ -75,6 +113,8 @@
 }
 
 .footer-links {
+    border: solid;
+    border-radius: 25px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -95,5 +135,6 @@
         justify-content: center;
         flex-wrap: wrap;
         gap: 2rem;
+        max-width: 200px;
     }
 }
