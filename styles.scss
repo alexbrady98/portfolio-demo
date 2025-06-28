@@ -49,6 +49,7 @@ body {
     border: 2px solid;
     border-radius: 25px;
     padding: 2rem;
+    overflow: hidden;
 
     &__heading {
         text-align: center;
@@ -56,33 +57,37 @@ body {
         text-decoration: underline;
         margin-bottom: 2rem;
     }
+}
 
-    &__content {
-        display: flex;
-        flex-wrap: wrap;
-        gap: 2rem;
+.about__content {
+    display: flex;
+    gap: 2rem;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
 
-        & > img {
-            width: 300px;
-            border-radius: 12px;
-        }
+.about__profile-picture {
+    flex-shrink: 0;
+    width: 250px;
+    height: auto;
+    border-radius: 12px;
+    object-fit: cover;
+}
 
-        &__text {
-            flex: 1;
-            max-width: 700px;
+.about__text {
+    flex: 1;
+    min-width: 300px;
 
-            .about__intro {
-                margin-bottom: 1rem;
-            }
+    .about__intro {
+        margin-bottom: 1rem;
+    }
 
-            .about__list {
-                padding-left: 1.5rem;
+    .about__list {
+        padding-left: 1.5rem;
 
-                &-item {
-                    margin-bottom: 0.5rem;
-                    list-style-type: disc;
-                }
-            }
+        .about__list-item {
+            list-style-type: disc;
+            margin-bottom: 0.5rem;
         }
     }
 }
@@ -100,9 +105,20 @@ body {
 
     &__folders {
         display: flex;
+        flex-wrap: wrap;
         flex-direction: row;
         justify-content: space-between;
         align-items: center;
+
+        img {
+            width: 150px;
+            height: auto;
+            border-radius: 12px;
+
+            &:hover {
+                transform: scale(1.1);
+            }
+        }
     }
 }
 

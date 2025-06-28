@@ -45,6 +45,7 @@ body {
   border: 2px solid;
   border-radius: 25px;
   padding: 2rem;
+  overflow: hidden;
 }
 .about__heading {
   text-align: center;
@@ -52,28 +53,35 @@ body {
   text-decoration: underline;
   margin-bottom: 2rem;
 }
+
 .about__content {
   display: flex;
-  flex-wrap: wrap;
   gap: 2rem;
+  align-items: flex-start;
+  flex-wrap: wrap;
 }
-.about__content > img {
-  width: 300px;
+
+.about__profile-picture {
+  flex-shrink: 0;
+  width: 250px;
+  height: auto;
   border-radius: 12px;
+  object-fit: cover;
 }
-.about__content__text {
+
+.about__text {
   flex: 1;
-  max-width: 700px;
+  min-width: 300px;
 }
-.about__content__text .about__intro {
+.about__text .about__intro {
   margin-bottom: 1rem;
 }
-.about__content__text .about__list {
+.about__text .about__list {
   padding-left: 1.5rem;
 }
-.about__content__text .about__list-item {
-  margin-bottom: 0.5rem;
+.about__text .about__list .about__list-item {
   list-style-type: disc;
+  margin-bottom: 0.5rem;
 }
 
 .project {
@@ -89,9 +97,18 @@ body {
 }
 .project__folders {
   display: flex;
+  flex-wrap: wrap;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
+}
+.project__folders img {
+  width: 150px;
+  height: auto;
+  border-radius: 12px;
+}
+.project__folders img:hover {
+  transform: scale(1.1);
 }
 
 .tech-skills {
