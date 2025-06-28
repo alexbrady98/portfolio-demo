@@ -1,21 +1,18 @@
 @use "./devices.scss";
 
 @mixin phone {
-    // for screens 480px or smaller
     @media only screen and (max-width: devices.$sm) {
         @content;
     }
 }
 
 @mixin small-screen {
-    // for screens between 481px and 640px
     @media only screen and (min-width: (devices.$sm + 1px)) and (max-width: devices.$md) {
         @content;
     }
 }
 
 @mixin tablets {
-    // for screens between 641px and 768px
     @media only screen and (min-width: (devices.$md + 1px)) and (max-width: devices.$lg) {
         @content;
     }
