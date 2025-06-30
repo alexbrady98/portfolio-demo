@@ -4,14 +4,29 @@
     padding: 0;
 }
 body {
-    background-color: #24252a;
+    background-color: #eff0f1;
+}
+
+.navbar,
+.about,
+.footer-links,
+.project,
+.tech-skills {
     font-family: "Montserrat", sans-serif;
-    color: #f0f0f0;
+    color: #ebe8e8;
     line-height: 1.6;
+    border-color: rgb(253, 252, 253);
+    background-color: rgb(10, 10, 10);
+    background-image: repeating-linear-gradient(
+        36deg,
+        rgba(255, 255, 255, 0.1),
+        rgba(255, 255, 255, 0.1) 1px,
+        transparent 0px,
+        transparent 2px
+    );
 }
 
 .navbar {
-    border: 2px solid rgb(252, 248, 248);
     border-radius: 25px;
     display: flex;
     justify-content: space-between;
@@ -57,40 +72,41 @@ body {
         text-decoration: underline;
         margin-bottom: 2rem;
     }
-}
 
-.about__content {
-    display: flex;
-    gap: 2rem;
-    align-items: flex-start;
-    flex-wrap: wrap;
-}
+    &__content {
+        display: flex;
+        gap: 2rem;
+        align-items: flex-start;
+        flex-wrap: wrap;
+    }
 
-.about__profile-picture {
-    flex-shrink: 0;
-    width: 250px;
-    height: auto;
-    border-radius: 12px;
-    object-fit: cover;
-}
+    &__profile-picture {
+        flex-shrink: 0;
+        width: 250px;
+        height: auto;
+        border-radius: 12px;
+        object-fit: cover;
+    }
 
-.about__text {
-    flex: 1;
-    min-width: 300px;
+    &__text {
+        flex: 1;
+        min-width: 300px;
+    }
 
-    .about__intro {
+    &__intro {
         margin-bottom: 1rem;
     }
 
-    .about__list {
+    &__list {
         padding-left: 1.5rem;
+    }
 
-        .about__list-item {
-            list-style-type: disc;
-            margin-bottom: 0.5rem;
-        }
+    &__list-item {
+        list-style-type: disc;
+        margin-bottom: 0.5rem;
     }
 }
+
 .project {
     border: 2px solid;
     border-radius: 25px;
@@ -136,7 +152,7 @@ body {
 
     &__description {
         margin-bottom: 2rem;
-        color: #ccc;
+        color: #f5f4f4;
     }
 
     &__icons {
