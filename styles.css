@@ -6,23 +6,23 @@
 
 body {
   background-color: #eff0f1;
+  font-family: "Montserrat", sans-serif;
+  color: #ebe8e8;
+  line-height: 1.6;
 }
 
 .navbar,
 .about,
-.footer-links,
 .project,
-.tech-skills {
-  font-family: "Montserrat", sans-serif;
-  color: #ebe8e8;
-  line-height: 1.6;
-  border-color: rgb(253, 252, 253);
+.tech-skills,
+.footer-links {
+  border: 2px solid rgb(253, 252, 253);
+  border-radius: 25px;
   background-color: rgb(10, 10, 10);
   background-image: repeating-linear-gradient(36deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.1) 1px, transparent 0px, transparent 2px);
 }
 
 .navbar {
-  border-radius: 25px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -51,8 +51,6 @@ body {
 }
 
 .about {
-  border: 2px solid;
-  border-radius: 25px;
   padding: 2rem;
   overflow: hidden;
 }
@@ -91,8 +89,6 @@ body {
 }
 
 .project {
-  border: 2px solid;
-  border-radius: 25px;
   padding: 2rem;
 }
 .project__heading {
@@ -104,7 +100,6 @@ body {
 .project__folders {
   display: flex;
   flex-wrap: wrap;
-  flex-direction: row;
   justify-content: space-between;
   align-items: center;
 }
@@ -112,14 +107,13 @@ body {
   width: 150px;
   height: auto;
   border-radius: 12px;
+  transition: transform 0.3s ease;
 }
 .project__folders img:hover {
   transform: scale(1.1);
 }
 
 .tech-skills {
-  border: 2px solid;
-  border-radius: 25px;
   padding: 2rem;
   text-align: center;
 }
@@ -145,7 +139,8 @@ body {
   align-items: center;
 }
 .tech-icon__img {
-  width: 50px;
+  width: 40px;
+  height: auto;
 }
 .tech-icon__label {
   margin-top: 0.5rem;
@@ -153,23 +148,7 @@ body {
   color: #fff;
 }
 
-.tech-icon {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-.tech-icon__img {
-  width: 40px;
-  height: auto;
-}
-.tech-icon__label {
-  margin-top: 0.5rem;
-  font-size: 0.875rem;
-}
-
 .footer-links {
-  border: 2px solid;
-  border-radius: 25px;
   padding: 1rem 2rem;
   display: flex;
   justify-content: space-between;

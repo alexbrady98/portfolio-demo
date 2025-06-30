@@ -11,7 +11,6 @@ body {
     line-height: 1.6;
 }
 
-
 .navbar,
 .about,
 .project,
@@ -28,7 +27,6 @@ body {
         transparent 2px
     );
 }
-
 
 .navbar {
     display: flex;
@@ -62,7 +60,6 @@ body {
         }
     }
 }
-
 
 .about {
     padding: 2rem;
@@ -109,7 +106,6 @@ body {
     }
 }
 
-
 .project {
     padding: 2rem;
 
@@ -139,7 +135,6 @@ body {
     }
 }
 
-
 .tech-skills {
     padding: 2rem;
     text-align: center;
@@ -163,7 +158,6 @@ body {
     }
 }
 
-
 .tech-icon {
     display: flex;
     flex-direction: column;
@@ -180,7 +174,6 @@ body {
         color: #fff;
     }
 }
-
 
 .footer-links {
     padding: 1rem 2rem;
